@@ -1,0 +1,22 @@
+{
+  "name": "wxapp-promise-api",
+  "version": "0.0.1",
+  "description": "wxapp promise",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zsqk/wxapp-promise-api.git"
+  },
+  "keywords": [
+    "wxapp"
+  ],
+  "author": "zsqk",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/zsqk/wxapp-promise-api/issues"
+  },
+  "homepage": "https://github.com/zsqk/wxapp-promise-api#readme",
+  "devDependencies": {
+    "eslint": "^3.17.1",
+    "eslint-config-google": "^0.7.1"
+  }
+}
