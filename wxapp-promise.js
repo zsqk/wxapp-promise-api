@@ -1,19 +1,18 @@
 /* global wx */
 
-const wxp = {
+export {
   request,
   setStorage,
+  getSystemInfo,
 };
-
-export default wxp;
 
 /**
  * 网络请求
  * @param {String} url
- * @param {Object} options
+ * @param {Object} [options]
  * @param {Object} options.header
  * @param {String} options.method
- * @return {Promise}
+ * @return {Promise<{data,statusCode:number,header}>}
  */
 function request(url, options = {}) {
   return new Promise((resolve, reject) => {
@@ -50,3 +49,27 @@ function setStorage(key, data, options = {}) {
     }));
   });
 }
+
+/**
+ * 获取系统信息
+ * 建议使用 wx.getSystemInfoSync() 替代
+ * @return {Promise<SystemInfo>}
+ * @link https://developers.weixin.qq.com/miniprogram/dev/api/wx.getSystemInfo.html
+ */
+function getSystemInfo() {
+  return new Promise((resolve, reject) => {
+    wx.getSystemInfo({
+      success(res) {
+        resolve(res);
+      },
+      fail: reject,
+    });
+  });
+}
+
+/**
+ * @typedef SystemInfo
+ * @property {string} brand 设备品牌
+ * @property {string} model 设备型号
+ * @property {string} pixelRatio 设备品牌
+ */
