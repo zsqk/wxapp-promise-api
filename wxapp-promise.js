@@ -69,7 +69,20 @@ function getSystemInfo() {
 
 /**
  * @typedef SystemInfo
- * @property {string} brand 设备品牌
+ * @property {string} brand 设备品牌 1.5.0
  * @property {string} model 设备型号
- * @property {string} pixelRatio 设备品牌
+ * @property {number} pixelRatio 设备像素比
+ * @property {number} screenWidth 屏幕宽度，单位px 1.1.0
+ * @property {number} screenHeight 屏幕高度，单位px 1.1.0
+ * @property {number} windowWidth 可使用窗口宽度，单位px
+ * @property {number} windowHeight 可使用窗口高度，单位px
+ * @property {number} statusBarHeight 状态栏的高度，单位px 1.9.0
+ * @property {string} language 微信设置的语言
+ * @property {string} version 微信版本号
+ * @property {string} system 操作系统及版本
+ * @property {string} platform 客户端平台
+ * @property {number} fontSizeSetting 用户字体大小（单位px）。  1.5.0
+ * @property {string} SDKVersion 客户端基础库版本 1.1.0
+ * @property {number} [benchmarkLevel] 设备性能等级（仅Android小游戏）。 1.8.0
+ * @todo 根据文档继续完善属性
  */
