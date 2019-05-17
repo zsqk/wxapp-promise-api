@@ -16,7 +16,7 @@
   },
   "homepage": "https://github.com/zsqk/wxapp-promise-api#readme",
   "devDependencies": {
-    "eslint": "^3.17.1",
-    "eslint-config-google": "^0.7.1"
+    "eslint": "^5.16.0",
+    "eslint-config-google": "^0.13.0"
   }
 }
