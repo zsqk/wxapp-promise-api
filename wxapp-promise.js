@@ -33,8 +33,9 @@ function alert(title, options = {}) {
  * 网络请求 wx.request
  * @param {String} url
  * @param {Object} [options]
- * @param {Object} options.header
- * @param {String} options.method
+ * @param {string | object} [options.data] 请求的参数
+ * @param {Object} [options.header]
+ * @param {String} [options.method]
  * @return {Promise<{data,statusCode:number,header}>}
  */
 function request(url, options = {}) {
